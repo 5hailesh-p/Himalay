@@ -46,9 +46,9 @@ const SignUp = () => {
                 }}>
                     <div>
                         <Typography variant="h4" component="h1">
-                            <b>Welcome!</b>
+                            <b>Create !</b>
                         </Typography>
-                        <Typography variant="body2">Sign Up to continue.</Typography>
+                        <Typography variant="h5">Your New Account .</Typography>
                     </div>
 
                     <TextField type="text" id="uname" label="UserID" variant="outlined" value={name} onChange={handelName} fullWidth />
