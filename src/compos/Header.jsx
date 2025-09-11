@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { useAppContext } from '../App';
+import { Brightness4, Brightness7 } from '@mui/icons-material';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -124,6 +125,9 @@ const Header = () => {
               </Button>
             ))}
           </Box>
+          <IconButton color="inherit" onClick={() => toggleMode(!mode)}>
+          {mode ? <Brightness7 /> : <Brightness4 />}
+        </IconButton>
           {logedin ?
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
