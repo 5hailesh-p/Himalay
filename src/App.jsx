@@ -23,7 +23,7 @@ function App() {
     palette: {
       mode: mode ? 'dark' : 'light',
       primary:{
-        main:'#ff00bfff',
+        main:'#001aff',
       },
     },
   });

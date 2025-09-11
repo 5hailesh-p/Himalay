@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
+import LandscapeIcon from '@mui/icons-material/Landscape';
 import { useAppContext } from '../App';
 import { Brightness4, Brightness7 } from '@mui/icons-material';
 
@@ -40,10 +40,10 @@ const Header = () => {
     setAnchorElUser(null);
   };
   return (
-    <AppBar position="static">
+    <AppBar position="static" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AcUnitIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <LandscapeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
