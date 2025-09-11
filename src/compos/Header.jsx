@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
 import { useAppContext } from '../App';
 import { Brightness4, Brightness7 } from '@mui/icons-material';
 
@@ -42,7 +42,7 @@ const Header = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <AcUnitIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -58,7 +58,7 @@ const Header = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            {import.meta.env.VITE_SITE_NAME}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -126,8 +126,8 @@ const Header = () => {
             ))}
           </Box>
           <IconButton color="inherit" onClick={() => toggleMode(!mode)}>
-          {mode ? <Brightness7 /> : <Brightness4 />}
-        </IconButton>
+            {mode ? <Brightness7 /> : <Brightness4 />}
+          </IconButton>
           {logedin ?
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
@@ -160,8 +160,6 @@ const Header = () => {
             </Box>
             :
             <Button color="inherit">Login</Button>}
-
-
 
         </Toolbar>
       </Container>
