@@ -4,12 +4,18 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 const Services = () => {
     return (
         <>
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={4}>
+        <Box container sx={{textAlign:'center',marginBottom:'4rem'}}  >
+            <Typography variant='h2'>Our Services</Typography>
+            <Typography variant='h6'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, eum sunt dolorem autem eius facere.</Typography>
+        </Box>
+            <Grid container  sx={{margin:"auto"}} maxWidth="lg" spacing={2}>
+
+                
+                <Grid  size={{xs:12,md:4}} >
                     <Card  >
                         <CardActionArea>
                             <CardMedia
@@ -30,6 +36,7 @@ const Services = () => {
                         </CardActionArea>
                     </Card>
                 </Grid>
+                
             </Grid>
         </>
     )
