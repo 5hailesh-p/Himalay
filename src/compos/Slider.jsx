@@ -16,7 +16,7 @@ const Slider = () => {
       slidesPerView={1}
       autoplay={{ delay: 2000, disableOnInteraction: false }}
       modules={[Autoplay]}
-      style={{ height: '400px' }} // 👈 control slider height
+      style={{ height: '400px' }} 
     >
       {img.map((item, index) => (
         <SwiperSlide key={index}>
@@ -24,7 +24,7 @@ const Slider = () => {
             component="img"
             src={item}
             sx={{
-              height: '400px',
+              height: '20rem',
               width: '100%',
               objectFit: 'cover',
               borderRadius: 2,
