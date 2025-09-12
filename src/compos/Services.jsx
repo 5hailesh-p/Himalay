@@ -13,7 +13,6 @@ const Services = () => {
             <Typography variant='h6'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, eum sunt dolorem autem eius facere.</Typography>
         </Box>
             <Grid container  sx={{margin:"auto"}} maxWidth="lg" spacing={2}>
-
                 
                 <Grid  size={{xs:12,md:4}} >
                     <Card  >
