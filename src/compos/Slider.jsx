@@ -1,8 +1,9 @@
 import React from 'react'
 import { Box } from '@mui/material'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
+import { Autoplay, EffectFade } from 'swiper/modules'
 import 'swiper/css'
+import 'swiper/css/effect-fade'
 
 const Slider = () => {
   const img = [
@@ -15,8 +16,9 @@ const Slider = () => {
       spaceBetween={10}
       slidesPerView={1}
       autoplay={{ delay: 2000, disableOnInteraction: false }}
-      modules={[Autoplay]}
+      modules={[Autoplay,EffectFade]}
       style={{ height: '400px' }} 
+      effect='fade'
     >
       {img.map((item, index) => (
         <SwiperSlide key={index}>
