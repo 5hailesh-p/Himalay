@@ -14,17 +14,17 @@ const Services = () => {
         },
         {
             title: "appdesign",
-            imgPath: 'https://picsum.photos/450/160',
+            imgPath: 'https://picsum.photos/id/10//450/160',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit natus soluta, ab voluptatem ea!',
         },
         {
             title: "destopapp",
-            imgPath: 'https://picsum.photos/450/160',
+            imgPath: 'https://picsum.photos/id/13//450/160',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit natus soluta, ab voluptatem ea!',
         },
         {
             title: "destopapp",
-            imgPath: 'https://picsum.photos/450/160',
+            imgPath: 'https://picsum.photos/id/20//450/160',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit natus soluta, ab voluptatem ea!',
         },
     ]
