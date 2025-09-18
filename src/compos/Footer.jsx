@@ -78,7 +78,7 @@ const Footer = () => {
         {/* Divider */}
         <Box mt={3} borderTop="1px solid rgba(255,255,255,0.2)" pt={2}>
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} <Typography  variant="span" sx={{color:'primary.main'}}><b>{import.meta.env.VITE_SITE_NAME}</b></Typography> . All rights reserved.
+            © {new Date().getFullYear()} <Typography  variant="span"  ><b>{import.meta.env.VITE_SITE_NAME}</b></Typography> . All rights reserved.
           </Typography>
         </Box>
       </Container>
