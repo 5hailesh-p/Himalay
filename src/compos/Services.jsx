@@ -9,7 +9,7 @@ const Services = () => {
     const ourServices = [
         {
             title: "webdesign",
-            imgPath: 'https://picsum.photos/450/160',
+            imgPath: 'https://picsum.photos/id/807/450/160',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit natus soluta, ab voluptatem ea!',
         },
         {

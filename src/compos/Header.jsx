@@ -40,7 +40,7 @@ const Header = () => {
     setAnchorElUser(null);
   };
   return (
-    <AppBar position="static" >
+    <AppBar position="static" sx={{bgcolor: "primary.main",}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <LandscapeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
